@@ -1,7 +1,7 @@
 body { 
     margin:0;
     padding:0;
-    font-family:helvetica, sans-serif; 
+    font-family:helvetica, sans-serif;
 }
 
 a { 
@@ -19,21 +19,45 @@ h2 {
     color:#000000;
     font-family:helvetica, sans-serif;
     font-size: 18px;
-    font-style: italic; 
+    font-style: italic;
+
+}
+
+#pad {
+    width: auto;
+    height: 5px;
 }
 
 #content { 
     float:left;
-    width:40%;
-    padding:0 0 0 10px;
+    width:30%;
+    border: 7px;
+    border-color: #417690;
+    border-style: groove;
+    padding: 7px;
 }
+
+
+#header {
+    width: auto;
+    height: 40px;
+    padding: 10px 10px 10px 40px;
+    background: #417690;
+    line-height: 40px;
+    color: #ffc;
+    overflow: hidden;
+}
+
 
 #sidebar { 
     float:right;
-    width:50%;
-    padding:10px;
+    width:30%;
     background:#efefef; 
     height:100%;
+    border: 7px;
+    border-color: #417690;
+    border-style: groove;
+    padding: 1px;
 }
 
 p.date { 

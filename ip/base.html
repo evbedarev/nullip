@@ -1,18 +1,24 @@
 {% load staticfiles %}
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>IP</title>
     <link href="{% static "css/blog.css" %}" rel="stylesheet">
 </head>
-<body>
-    <div id="content">
-        {% block content %}
-        {% endblock %}
+    <div id="header">
+        Мониторинг использования пула IP адресов
     </div>
-    <div id="sidebar">
-        <h2>Information:</h2>
-            <h2>Статистика ведётся с 21.03.2017. Каждый день доступность проверяется 3 раза.</h2>
+    <div id="pad">
     </div>
-</body>
+    <body>
+        <div id="content">
+            {% block content %}
+            {% endblock %}
+        </div>
+        <div id="sidebar">
+            <h2>Information:</h2>
+                <h2>Статистика ведётся с 21.03.2017. Каждый день доступность проверяется 3 раза.</h2>
+        </div>
+    </body>
 </html>
