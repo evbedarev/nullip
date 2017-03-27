@@ -1,0 +1,13 @@
+{% extends "ip/base.html" %}
+{% block title %}My blog{% endblock %}
+{% block content %}
+    <h1 align="center"> IP </h1>
+        <h2>
+            <table cellpadding="10" align="center">
+                {% for post in posts %}
+                    <tr><td>{{ post.ip }}</td><td>{{ post.dt }}</td><td>{{ post.intstates }}</td></tr>
+                {% endfor %}
+            </table>
+        </h2>
+    {% include "ip/post/pagination.html" with page=posts %}
+{% endblock %}
